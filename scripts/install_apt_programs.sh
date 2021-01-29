@@ -31,6 +31,8 @@ install gparted
 install gnome-tweak-tool 
 install gnome-shell-extensions 
 install libreoffice
+install powerline
+install fonts-powerline
 install snap 
 install ubuntu-restricted-extras
 install usb-creator-gtk
