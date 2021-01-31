@@ -1,6 +1,6 @@
 #!/bash/bin
 
-wget -qnc https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-sudo dpkg -i nordvpn-release_1.0.0_all.deb
-sudo apt update
-sudo apt install nordvpn
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+# sh <(wget -qO - https://downloads.nordcdn.com/apps/linux/install.sh)
+# sudo apt update
+# sudo apt install nordvpn

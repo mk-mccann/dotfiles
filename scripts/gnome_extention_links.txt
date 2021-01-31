@@ -1,0 +1,8 @@
+https://extensions.gnome.org/extension/708/panel-osd/
+https://extensions.gnome.org/extension/750/openweather/
+https://extensions.gnome.org/extension/751/audio-output-switcher/
+https://extensions.gnome.org/extension/1160/dash-to-panel/
+https://extensions.gnome.org/extension/1276/night-light-slider/
+https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
+https://extensions.gnome.org/extension/1503/tray-icons/
+https://extensions.gnome.org/extension/3628/arcmenu/
