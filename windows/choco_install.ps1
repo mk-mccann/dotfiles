@@ -7,41 +7,51 @@ else {
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 }
 
+ECHO Installing apps
+
+ECHO Configure chocolatey
+choco feature enable -n allowGlobalConfirmation
+
 # Install all the packages
 # Browsers
-choco install brave -a
-choco install firefox -a
+choco install firefox -y
 
 # Text editors / IDEs
-choco install miktex -a
-choco install notepadplusplus -a
-choco install obsidian -a
-choco install pandoc - a
-choco install vscode -a
+choco install notepadplusplus -y
+choco install obsidian -y
 
 # Dev tools
-choco install git -a
-choco install r -a
-choco install r.studio -a
+choco install git -y
+choco install miniconda -y
+choco install julia -y
+choco install r -y
+choco install r.studio -y
+choco install vscode -y
 
 # Media
-choco install gimp -a
-choco install handbrake.install -a
-choco install spotify -a
-choco install vlc -a
+choco install calibre -y
+choco install gimp -y
+choco install inkscape -y
+choco install handbrake.install -y
+choco install spotify -y
+choco install vlc -y
 
 # Utilities + other
-choco install 7zip.install -a
-choco install blender -a
-choco install dropbox -a
-choco install f.lux -a
-choco install foxitreader -a
-choco install garmin-express -a
-choco install irfanview -a
-choco install onetastic -a
-choco install pdfsam.install -a
-choco install slack -a
-choco install teamviewer -a
-choco install whatsapp -a
-choco install zoom -a
-choco install zotero -a
+choco install 7zip.install -y
+choco install blender -y
+choco install dropbox -y
+choco install f.lux -y
+choco install foxitreader -y
+choco install garmin-express -y
+choco install irfanview -y
+choco install nordvpn -y
+choco install onetastic -y
+choco install pdfsam.install -y
+choco install powertoys -y
+choco install slack -y
+choco install teamviewer -y
+choco install whatsapp -y
+choco install zoom -y
+choco install zotero -y
+
+choco feature disable -n allowGlobalConfirmation
